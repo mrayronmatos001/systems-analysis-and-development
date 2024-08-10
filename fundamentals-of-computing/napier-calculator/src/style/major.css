@@ -1,0 +1,12 @@
+@import url("/src/style/reset.css");
+@import url("/src/style/main.css");
+@import url("/src/style/dialog.css");
+
+body {
+    background: black no-repeat center center / 30%;
+    display: grid;
+    font-family: monospace;
+    font-size: 1.6rem;
+    place-items: center;
+    position: relative;
+}

@@ -1,0 +1,117 @@
+dialog {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+dialog .wrapper {
+    display: flex;
+}
+
+dialog .wrapper .column-group {
+    display: flex;
+}
+
+dialog .wrapper .column-group .square-column .square:not(.square:first-child)::after {
+    content: "";
+    background-color: black;
+    border: 1px solid black;
+    height: .2rem;
+    position: absolute;
+    bottom: 50%;
+    transform: rotate(-45deg) translateY(50%);
+    width: 5.5rem;
+}
+
+dialog .wrapper .column-group .square-column .square:not(.square:first-child) {
+    display: flex;
+    position: relative;
+}
+
+dialog .wrapper .column-group .square-column .square:not(.square:first-child) .t1 {
+    position: absolute;
+    left: .1rem;
+}
+
+dialog .wrapper .column-group .square-column .square:not(.square:first-child) .t2 {
+    position: absolute;
+    bottom: 0;
+    right: .1rem;
+}
+
+dialog .wrapper .column-group .square-column .square {
+    background-color: blanchedalmond;
+}
+
+dialog .wrapper .square-column {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+dialog .wrapper .square-column .square {
+    background-color: gold;
+    border: 1px solid black;
+    display: grid;
+    height: 4rem;
+    margin: 0 auto;
+    overflow: hidden;
+    place-content: center;
+    position: relative;
+    width: 4rem;
+}
+
+dialog .wrapper .square-column .square.active {
+    background-color: brown;
+}
+
+dialog .wrapper .board {
+    background-color: gainsboro;
+    border-left: .2rem solid black;
+    display: grid;
+    place-items: center;
+    width: 30rem;
+}
+
+dialog .wrapper .board .resultBoard {
+    min-width: 10rem;
+}
+
+dialog .wrapper .board section {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 100%;
+}
+
+dialog .wrapper .board .solution-area {
+    border-bottom: 0px solid black;
+}
+
+dialog .wrapper .board .multiplication-area > span {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+dialog .wrapper .board .multiplication-area {
+    position: relative;
+}
+
+dialog .wrapper .board .multiplication-area .close {
+    bottom: 0rem;
+    left: 0;
+    position: absolute;
+    
+}
+
+dialog .wrapper .board .sum-area {
+    position: relative;
+}
+
+dialog .wrapper .board section .add {
+    bottom: 0rem;
+    position: absolute;
+}
