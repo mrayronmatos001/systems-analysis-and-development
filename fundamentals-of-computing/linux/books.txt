@@ -1,0 +1,7 @@
+#LIVRO	#EXEMPLARES
+###################
+eletromagnetism	5
+networks	4
+calculus	8
+physics	6
+electronics	7
