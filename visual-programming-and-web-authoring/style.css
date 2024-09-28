@@ -1,0 +1,161 @@
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+article {
+    padding: 1rem 0;
+}
+
+header {
+    height: 24rem;
+}
+
+header .row1 {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 4rem;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+header #location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    row-gap: 1rem;
+}
+
+header nav {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 0 .2rem;
+}
+
+header p {
+    height: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main article h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.2;
+    padding: 0 2rem;
+    text-align: justify;
+}
+
+main  #lists {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+main #lists article:first-child ul li {
+    padding: .4rem 0;
+}
+
+main #lists article:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #lists article:last-child ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+main #lists article:last-child figure {
+    display: flex;
+    column-gap: 2.9rem;
+    position: relative;
+    left: .9rem;
+    bottom: .5rem;
+}
+
+main #lists article:last-child figure img {
+    width: 2.5rem;
+}
+
+main #lists article:last-child figure img:last-child {
+    margin-left: 1.2rem;
+}
+
+#academic-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#academic-background h1 {
+    font-size: 1.7rem;
+}
+
+#academic-background figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+table {
+    padding: .4rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 25rem;
+    align-items: center;
+}
+
+table th, td {
+    width: 10rem;
+    text-align: center;
+}
+
+table caption {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+
+#books ul,
+#languages ul {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#languages ul li {
+    line-height: 1.8;
+}
+
+footer {
+    padding: 2rem;
+    font-style: italic;
+    color: rgb(97, 91, 91);
+}
