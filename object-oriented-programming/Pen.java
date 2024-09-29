@@ -74,6 +74,46 @@ public class Pen {
         isCapped = false;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((model == null) ? 0 : model.hashCode());
+        result = prime * result + ((color == null) ? 0 : color.hashCode());
+        result = prime * result + Float.floatToIntBits(tip);
+        result = prime * result + Float.floatToIntBits(fill);
+        result = prime * result + (isCapped ? 1231 : 1237);
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Pen other = (Pen) obj;
+        if (model == null) {
+            if (other.model != null)
+                return false;
+        } else if (!model.equals(other.model))
+            return false;
+        if (color == null) {
+            if (other.color != null)
+                return false;
+        } else if (!color.equals(other.color))
+            return false;
+        if (Float.floatToIntBits(tip) != Float.floatToIntBits(other.tip))
+            return false;
+        if (Float.floatToIntBits(fill) != Float.floatToIntBits(other.fill))
+            return false;
+        if (isCapped != other.isCapped)
+            return false;
+        return true;
+    }
+
     public static void main(String[] args) {
         Pen pen1 = new Pen("bic", "blue", 0.7f, 0.5f, true);
         pen1.capping();
