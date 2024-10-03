@@ -142,6 +142,10 @@ table caption {
     
 }
 
+#books li {
+    line-height: 1.8;
+}
+
 #books ul,
 #languages ul {
     display: inline-block;
