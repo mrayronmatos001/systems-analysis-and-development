@@ -14,7 +14,8 @@ article {
 }
 
 header {
-    height: 24rem;
+    background-color: rgba(97, 91, 91, 0.11);
+    height: 24rem;  
 }
 
 header .row1 {
@@ -159,7 +160,8 @@ table caption {
 }
 
 footer {
+    background-color: rgba(97, 91, 91, 0.11);
     padding: 2rem;
     font-style: italic;
-    color: rgb(97, 91, 91);
+    color: black;
 }
