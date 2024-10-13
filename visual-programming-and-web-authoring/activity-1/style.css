@@ -18,6 +18,7 @@ html {
 body {
     font-size: 1.4rem;
     word-spacing: 0.2rem;
+    letter-spacing: 0.03rem;
 }
 
 .container {
@@ -90,7 +91,12 @@ footer {
     max-width: 900px;
     margin: 2rem auto;
     display: flex;
+    justify-content: center;
     column-gap: 6rem;
+}
+
+address {
+    font-style: normal;
 }
 
 address, .rights, .who_am_i {
@@ -100,7 +106,8 @@ address, .rights, .who_am_i {
 }
 
 address p, .rights p, .who_am_i p {
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     margin: 0;
     max-width: 32rem;
     text-align: justify;
