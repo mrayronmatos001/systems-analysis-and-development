@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #2F4F4F;
+    --secundary-color: #9ACD32;
+}
+
+html {
+    font-size: 62.5%;
+    text-align: justify;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.4rem;
+    word-spacing: 0.2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1f 4rem;
+}
+
+.container_base {
+    display: grid;
+    grid-template-rows: 10rem 1fr;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.apresentation h1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.apresentation figure {
+    width: 90%;
+    background-color: #EEE;
+    margin: 1.5rem auto;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0 0.2rem 0.5rem #AAA;
+}
+
+.history h1, .course h1 {
+    border-bottom: 0.4rem solid var(--secundary-color);
+}
+
+ul {
+    margin: 0 0 1rem 3rem;
+}
+
+footer {
+    border-top: 0.4rem solid var(--secundary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.container_footer {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    column-gap: 6rem;
+}
+
+address, .rights, .who_am_i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+address p, .rights p, .who_am_i p {
+    font-size: 1.2rem;
+    margin: 0;
+    max-width: 32rem;
+    text-align: justify;
+}
+
+address a {
+    text-decoration: none;
+    color: white;
+}
