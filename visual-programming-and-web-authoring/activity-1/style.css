@@ -13,6 +13,7 @@ html {
 *, *::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,32 +30,38 @@ body {
 .container_base {
     display: grid;
     grid-template-rows: 10rem 1fr;
-    max-width: 90rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 header {
     display: flex;
     align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 header img {
-    height: 90%;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
     font-size: 2rem;
     margin: 2rem 0;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.4rem;
     font-weight: normal;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
     margin: 1rem 1rem 1rem 0;
+    padding: 0 1rem;
 }
 
 .apresentation h1 {
@@ -62,6 +69,8 @@ p {
     color: white;
     padding: 0.2rem 0.4rem;
     border-radius: 0.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .apresentation figure {
@@ -71,6 +80,11 @@ p {
     text-align: center;
     font-style: italic;
     box-shadow: 0 0.2rem 0.5rem #AAA;
+}
+
+.apresentation figure img {
+    max-width: 100%;
+    height: auto;
 }
 
 .history h1, .course h1 {
@@ -87,16 +101,23 @@ footer {
     color: white;
 }
 
+.container_footer section p {
+    text-align: center;
+}
+
 .container_footer {
     max-width: 900px;
     margin: 2rem auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    column-gap: 6rem;
+    row-gap: 2rem;
+    align-items: center;
 }
 
 address {
     font-style: normal;
+    margin: 0 auto;
 }
 
 address, .rights, .who_am_i {
@@ -116,4 +137,27 @@ address p, .rights p, .who_am_i p {
 address a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width:800px) {
+    .container_base {
+        max-width: 900px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .apresentation h1 {
+        margin-left: 0%;
+        margin-right: 0rem;
+        
+    }
+    .container_footer {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 2em;
+    }
+    .container_footer section p {
+        text-align: left;
+    }
 }
