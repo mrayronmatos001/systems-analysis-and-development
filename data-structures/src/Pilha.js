@@ -28,7 +28,9 @@ class Pilha {
     isFull() {
         return this.length() === this.size;
     }
-    toString() { }
+    toString() {
+        return this.dados.map(e => e).join("");
+     }
     clear() {
         this.topo = 0;
     }
