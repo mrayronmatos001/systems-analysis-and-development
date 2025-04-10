@@ -4,6 +4,12 @@ class Pilha {
         this.size = size;
         this.topo = 0;
     }
+    getSize() {
+        return this.size;
+    }
+    getDatas() {
+        return this.dados;
+    }
     push(elemento) {
         if (this.isFull()) {
             throw new Error("Stack Overflow");
@@ -15,7 +21,9 @@ class Pilha {
         if (this.isEmpty()) {
             throw new Error("Stack underflow");
         }
+        const PopedElement = this.dados[this.topo-1];
         this.topo--;
+        return PopedElement;
     }
     top() {
         if (!this.isEmpty()) {
