@@ -29,7 +29,7 @@ class Fila {
     length() {
         if (this.isEmpty()) return 0;
         if (this.inicio < this.fim) return this.fim - this.inicio;
-        return ((this.size + 1 - this.inicio) + (this.fim - 0));
+        return ((this.size + 1 - this.inicio) + this.fim);
     }
     isEmpty() {
         return this.inicio === this.fim;
