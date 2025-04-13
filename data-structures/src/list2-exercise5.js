@@ -60,7 +60,7 @@ class Deque {
           this.items[i + 1] = this.items[i];
         }
   
-        this.fimCauda--;
+        this.fimCauda++;
         this.quantidade--;
       }
     }
